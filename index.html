@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Saudi Gate</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="images/saudi-gate-logo.png" class="logo" alt="Saudi Gate Logo" />
+    <h1>Saudi Gate</h1>
+  </header>
+  <div class="banner" id="banner"></div>
+  <div class="filters">
+    <select id="cityFilter">
+      <option value="all">All Cities</option>
+      <option value="riyadh">Riyadh</option>
+      <option value="jeddah">Jeddah</option>
+      <option value="khobar">Khobar</option>
+      <option value="mecca">Mecca</option>
+      <option value="alula">AlUla</option>
+      <option value="medina">Medina</option>
+    </select>
+    <select id="cuisineFilter">
+      <option value="all">All Cuisines</option>
+      <option value="japanese">Japanese 🇯🇵</option>
+      <option value="french">French 🇫🇷</option>
+      <option value="italian">Italian 🇮🇹</option>
+      <option value="saudi">Saudi 🇸🇦</option>
+      <option value="lebanese">Lebanese 🇱🇧</option>
+      <option value="swiss">Swiss 🇨🇭</option>
+    </select>
+    <select id="ratingFilter">
+      <option value="all">All Ratings</option>
+      <option value="5">5 Stars</option>
+      <option value="4">4+ Stars</option>
+    </select>
+  </div>
+  <main id="restaurantList">
+    <div class="restaurant-card" data-city="riyadh" data-cuisine="japanese" data-rating="4.7">
+      <img src="images/clap-riyadh.jpg" />
+      <h2>Clap Riyadh</h2>
+      <p>Japanese Cuisine</p>
+      <p>⭐ 4.7</p>
+      <p>⏰ 12:00 PM – 12:00 AM</p>
+      <div class="buttons">
+        <a href="#" class="btn">Reserve</a>
+        <a href="#" class="btn">Menu</a>
+        <a href="https://wa.me/966500000001" class="btn chat-btn" target="_blank">💬 Chat</a>
+      </div>
+    </div>
+    
+    <div class="restaurant-card" data-city="riyadh" data-cuisine="french" data-rating="4.6">
+      <img src="images/lpm-riyadh.jpg" />
+      <h2>LPM Riyadh</h2>
+      <p>French Cuisine</p>
+      <p>⭐ 4.6</p>
+      <p>⏰ 1:00 PM – 11:00 PM</p>
+      <div class="buttons">
+        <a href="#" class="btn">Reserve</a>
+        <a href="#" class="btn">Menu</a>
+        <a href="https://wa.me/966500000002" class="btn chat-btn" target="_blank">💬 Chat</a>
+      </div>
+    </div>
+    
+    <div class="restaurant-card" data-city="jeddah" data-cuisine="japanese" data-rating="4.5">
+      <img src="images/nozomi-jeddah.jpg" />
+      <h2>Nozomi Jeddah</h2>
+      <p>Japanese Cuisine</p>
+      <p>⭐ 4.5</p>
+      <p>⏰ 1:00 PM – 1:00 AM</p>
+      <div class="buttons">
+        <a href="#" class="btn">Reserve</a>
+        <a href="#" class="btn">Menu</a>
+        <a href="https://wa.me/966500000003" class="btn chat-btn" target="_blank">💬 Chat</a>
+      </div>
+    </div>
+    
+    <div class="restaurant-card" data-city="khobar" data-cuisine="italian" data-rating="4.6">
+      <img src="images/piatto-khobar.jpg" />
+      <h2>Piatto Khobar</h2>
+      <p>Italian Cuisine</p>
+      <p>⭐ 4.6</p>
+      <p>⏰ 1:00 PM – 12:00 AM</p>
+      <div class="buttons">
+        <a href="#" class="btn">Reserve</a>
+        <a href="#" class="btn">Menu</a>
+        <a href="https://wa.me/966500000004" class="btn chat-btn" target="_blank">💬 Chat</a>
+      </div>
+    </div>
+    
+    <div class="restaurant-card" data-city="mecca" data-cuisine="saudi" data-rating="4.4">
+      <img src="images/aldeyafa-mecca.jpg" />
+      <h2>Al Deyafa Mecca</h2>
+      <p>Saudi Cuisine</p>
+      <p>⭐ 4.4</p>
+      <p>⏰ 6:00 PM – 1:00 AM</p>
+      <div class="buttons">
+        <a href="#" class="btn">Reserve</a>
+        <a href="#" class="btn">Menu</a>
+        <a href="https://wa.me/966500000005" class="btn chat-btn" target="_blank">💬 Chat</a>
+      </div>
+    </div>
+    
+    <div class="restaurant-card" data-city="alula" data-cuisine="lebanese" data-rating="4.8">
+      <img src="images/somewhere-alula.jpg" />
+      <h2>Somewhere AlUla</h2>
+      <p>Lebanese Cuisine</p>
+      <p>⭐ 4.8</p>
+      <p>⏰ 12:00 PM – 11:00 PM</p>
+      <div class="buttons">
+        <a href="#" class="btn">Reserve</a>
+        <a href="#" class="btn">Menu</a>
+        <a href="https://wa.me/966500000006" class="btn chat-btn" target="_blank">💬 Chat</a>
+      </div>
+    </div>
+    
+    <div class="restaurant-card" data-city="medina" data-cuisine="swiss" data-rating="4.5">
+      <img src="images/swiss-house-medina.jpg" />
+      <h2>Swiss House Medina</h2>
+      <p>Swiss Cuisine</p>
+      <p>⭐ 4.5</p>
+      <p>⏰ 1:00 PM – 12:00 AM</p>
+      <div class="buttons">
+        <a href="#" class="btn">Reserve</a>
+        <a href="#" class="btn">Menu</a>
+        <a href="https://wa.me/966500000007" class="btn chat-btn" target="_blank">💬 Chat</a>
+      </div>
+    </div>
+    </main>
+  <script src="script.js"></script>
+</body>
+</html>
